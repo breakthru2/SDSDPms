@@ -1,0 +1,12 @@
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\bin\Debug\netcoreapp3.1\SDSDPms.DataAccess.deps.json
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\bin\Debug\netcoreapp3.1\SDSDPms.DataAccess.dll
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\obj\Debug\netcoreapp3.1\SDSDPms.DataAccess.csprojAssemblyReference.cache
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\obj\Debug\netcoreapp3.1\SDSDPms.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\obj\Debug\netcoreapp3.1\SDSDPms.DataAccess.AssemblyInfo.cs
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\bin\Debug\netcoreapp3.1\SDSDPms.DataAccess.pdb
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\bin\Debug\netcoreapp3.1\SDSDPms.Models.dll
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\bin\Debug\netcoreapp3.1\SDSDPms.Models.pdb
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\obj\Debug\netcoreapp3.1\SDSDPms.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\obj\Debug\netcoreapp3.1\SDSDPms.DataAccess.csproj.CopyComplete
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\obj\Debug\netcoreapp3.1\SDSDPms.DataAccess.dll
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.DataAccess\obj\Debug\netcoreapp3.1\SDSDPms.DataAccess.pdb

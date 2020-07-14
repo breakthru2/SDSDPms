@@ -1,0 +1,9 @@
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\bin\Debug\netcoreapp3.1\SDSDPms.Models.deps.json
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\bin\Debug\netcoreapp3.1\SDSDPms.Models.dll
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\obj\Debug\netcoreapp3.1\SDSDPms.Models.csprojAssemblyReference.cache
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\obj\Debug\netcoreapp3.1\SDSDPms.Models.AssemblyInfoInputs.cache
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\obj\Debug\netcoreapp3.1\SDSDPms.Models.AssemblyInfo.cs
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\bin\Debug\netcoreapp3.1\SDSDPms.Models.pdb
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\obj\Debug\netcoreapp3.1\SDSDPms.Models.csproj.CoreCompileInputs.cache
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\obj\Debug\netcoreapp3.1\SDSDPms.Models.dll
+C:\Users\Breakthru\Documents\Net Projects\SDSDPms\SDSDPms.Models\obj\Debug\netcoreapp3.1\SDSDPms.Models.pdb

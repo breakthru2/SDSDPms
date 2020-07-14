@@ -1,0 +1,112 @@
+﻿@model IEnumerable<Department>
+@{
+    ViewData["Title"] = "Department";
+}
+
+<div class="content container-fluid">
+
+    <!-- Page Header -->
+    <div class="page-header col-md-10">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">@ViewData["Title"]</h3>
+
+            </div>
+            <div class="col-auto float-right ml-auto">
+                <a asp-action="AddDepartment" asp-controller="Department" asp-area="Admin" class="btn add-btn"><i class="fa fa-plus"></i> Create Department</a>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Header -->
+
+    <div class="row">
+        <div class="col-md-10">
+            <div>
+                <table class="table table-bordered" id="tblData">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ var i = 1;}
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@i</td>
+                                <td>@item.Name</td>
+                                <td>
+                                    <div class="text-center">                                       
+                                        <form asp-action="Delete" asp-controller="Department" method="post">
+                                            <a asp-action="Edit" asp-controller="Department" asp-route-id="@item.Id" class='btn btn-success text-white' style='cursor:pointer' ; width:100px">
+                                                <i class='far fa-edit'></i> Edit
+                                            </a>
+                                            &nbsp;
+                                            <a asp-action="Delete" asp-controller="Department" asp-route-id="@item.Id" class='btn btn-success text-white' style='cursor:pointer' ; width:100px">
+                                                <i class='far fa-edit'></i> Edit
+                                            </a>
+                                            <a onclick=Delete() class='btn btn-danger text-white' style='cursor:pointer' ; width:100px">
+                                                <i class='far fa-trash-alt'></i> Delete
+                                            </a>
+                                            @*<input type="hidden" value="@item.Id" name="Id"/>
+        <button type="submit" class="btn btn-danger text-white" onclick="return functionConfirm(this)" style='cursor:pointer' ; width:100px">
+            <i class='far fa-trash-alt'></i> Delete
+        </button>*@
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            i++;
+                        }
+
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var dataTable = $("#tblData");
+            dataTable.DataTable();
+
+
+        })
+    </script>
+
+    @if (TempData["Message"] != null)
+    {
+        <script type="text/javascript">
+              toastr.success("@TempData["Message"]");
+            </script>
+     }
+    <script>
+        function functionConfirm(event) {
+            swal({
+                title: 'Are you sure you want to delete?',
+                text: "You will not be able to recover this item",
+                type: 'warning',
+                showCancelButton: true,
+                cancelButtonText: 'No',
+                cancelButtonClass: 'btn btn-danger',
+                showConfirmButton: true,
+                confirmButtonText: 'Yes',
+                confirmButtonClass: 'btn btn-success'
+            }, function (isConfirm) {
+                if (isConfirm) {
+                    $('form').submit();
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+            return false;
+        }
+    </script>
+}
+

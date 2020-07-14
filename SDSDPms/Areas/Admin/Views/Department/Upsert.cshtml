@@ -1,0 +1,47 @@
+﻿@model Department
+@{
+    var title = "Create Department";
+}
+
+<div class="content container-fluid">
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="row">
+            @if (Model.Id != null)
+            {
+                <input type="hidden" asp-for="Id" />
+                title = "Edit Department";
+            }
+            <div class="col-sm-12">
+                <h3 class="page-title">@title</h3>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Header -->
+
+
+
+    <div class="row">
+        <div class="modal-content col-md-10">
+            <div class="modal-header">
+                <h4 class="modal-title">Create Department</h4>
+            </div>
+            <div class="modal-body">
+                <form asp-action="AddDepartment" asp-controller="Department" asp-area="Admin" method="post">
+                    <div class="form-group">
+                        <label asp-for="@Model.Name"></label>
+                        <input type="text" class="form-control" asp-for="@Model.Name">
+                    </div>
+
+                    <div class="submit-section text-center">
+                        <button class="btn btn-primary submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,43 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "Add Department";
+}
+
+<div class="content container-fluid">
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="page-title">Add Department</h3>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Header -->
+
+
+
+    <div class="row">
+        <div class="modal-content col-md-10">
+            <div class="modal-header">
+                <h4 class="modal-title">Create Department</h4>
+            </div>
+            <div class="modal-body">
+                <form asp-action="AddDepartment" asp-controller="Department" asp-area="Admin" method="post">
+                    <div class="form-group">
+                        <label asp-for="@Model.Name"></label>
+                        <input type="text" class="form-control" asp-for="@Model.Name">
+                        <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="submit-section text-center">
+                        <button class="btn btn-primary submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
